@@ -3,7 +3,8 @@ import axios from 'axios';
 import React, {} from 'react';
 
 //Declaring a new class to make a call out to a Random Number Restful API using Axios.
-const baseRequest = 'http://www.randomnumberapi.com/api/v1.0/randomredditnumber?min=1&max=100&count=1';
+//Darn, accidentally giving two random numbers. I'll fix the URL so that only one is given.
+const baseRequest = 'http://www.randomnumberapi.com/api/v1.0/randomredditnumber?min=1&max=100&count=0';
 function App(){
   //Helper function that actually performs the get request
     const [number, setNumber] = React.useState(null);
